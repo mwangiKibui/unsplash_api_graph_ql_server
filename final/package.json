@@ -1,0 +1,25 @@
+{
+  "name": "unsplash-api-backend",
+  "version": "1.0.0",
+  "description": "implementing the unsplash-api from the back",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "start": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "unsplash-api-server"
+  },
+  "author": "mwangikibui",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.19.2",
+    "dotenv": "^8.2.0",
+    "es6-promise": "^4.2.8",
+    "express": "^4.17.1",
+    "isomorphic-fetch": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "unsplash-js": "^7.0.2"
+  }
+}
