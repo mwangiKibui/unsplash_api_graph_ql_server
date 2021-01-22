@@ -21,7 +21,7 @@ class UserResolver {
     };
 
     //restructuring images
-    async structureImage (result) {
+    structureImage (result) {
         return {
             ...result,
             link:result['links']['download'],
