@@ -24,4 +24,4 @@ npm run dev
 ```
 - Interact with the API using the GraphQlPlayground on logged url.
 
-Am open for any review, feel welcome.
+I am open for any review, feel welcome.
