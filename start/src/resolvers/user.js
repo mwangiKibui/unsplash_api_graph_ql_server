@@ -2,24 +2,14 @@ require('dotenv').config();
 require('es6-promise').polyfill();
 require('isomorphic-fetch');
 const unsplash = require('unsplash-js');
+const {structureImage,structureUser} = require('../utils/structure');
 
 class UserResolver {
 
     constructor(){
         this.api = unsplash.createApi({
             accessKey:process.env.ACCESS_KEY
-        });
-
-    };
-
-    //structuring user
-    structureUser (result){
-        
-    };
-
-    //structuring images
-    structureImage (result) {
-        
+        })
     };
 
     //fetching user details
