@@ -40,26 +40,24 @@ class ImageResolver {
             page,
             perPage
         }).catch(console.log);
-
+    
         //error checking
         if(result.errors) throw new Error(result.errors[0]);
-
+    
         return result.response['results'].map((photo) => {
-
+    
             let image = this.structureImage.bind(this,photo);
-
+    
             let user = this.structureUser.bind(this,photo['user']);
-
+    
             return {
                 image,
                 user
             };
-
-
+    
         });
-
+    
     };
-
     //searching for photos.
     async searchPhotos(key,page,perPage,orientation){
 

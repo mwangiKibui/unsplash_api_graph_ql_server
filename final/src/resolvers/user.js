@@ -9,7 +9,6 @@ class UserResolver {
         this.api = unsplash.createApi({
             accessKey:process.env.ACCESS_KEY
         });
-
     };
 
     //restructuring user
